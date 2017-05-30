@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge André \textsc{Videla}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Switzerland  | 20 August 1991 \\
+\textsc{Address:} & Rue pré-du-marché 9B, 1004 Lausanne, Switzerland \\
+\textsc{Phone:} & +41 79 822 0541\\
+\textsc{email:} & \href{mailto:andre.videla@gmail.com}{andre.videla@gmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Bio
+%----------------------------------------------------------------------------------------
+
+\section{Bio}
+Fascinated by programming languages, I seek excellence, correctness and beauty in code. Lots of experiences in game development taught me to mix pragmatism and elegance. My deepest interests lie in type systems and programming language theory and design.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{8cm}|l}
+\emph{Current} & Software Engineer at Sicpa, Lausanne\\
+\textsc{Oct. 2016} & \emph{Mobile engineer for iOS}\\ 
+& \footnotesize{Designed, developed and maintained internal and public APIs and libraries for iOS. Developed and maintained small and medium scale mobile applications.} & Swift, Obj-C\\
+\multicolumn{2}{c}{} \\
+
+\textsc{July 2016} & Summer camp teacher at \textsc{TechSpark}, Lausanne \emph{}\\
+& \footnotesize{Taught basic programming to kids from 7 to 17 using Swift. Subjects include functions, flow control, loops and side effect all of which were implemented in an unsupervised personal project by the students.} & Swift\\
+\multicolumn{2}{c}{}\\
+
+%------------------------------------------------
+
+\textsc{July 2015-Sept 2015} & Internship at \textsc{Kabotip}, Tokyo (Remote) \emph{}\\
+& \footnotesize{Developed micro-services in Clojure for the Kabotip platform. Namely the mobile notification service and the automatic moderation tool for user comments.} & Clojure, Redis\\
+\multicolumn{2}{c}{}\\
+
+%------------------------------------------------
+
+\textsc{2013-2014} & Volunteer developer at Dischan, (Remote)\\
+& \footnotesize{Worked on Android ports and helped with QA} & Java
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+2012 - 2016 & Interrupted Bachelor in Computer Science at EPFL, Lausanne\\
+& \footnotesize{131 credits}\\
+\multicolumn{2}{c}{}\\
+
+%------------------------------------------------
+
+2007 - 2012 & Maturité Gymnasiale\\ & option principale Physique et Application des Math\\ & option secondaire Introduction à la programmation\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Certificates and Projects}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{rp{10cm}|l}
+\textsc{May} 2017 & Introduction to Logic by Stanford University on Coursera. \footnotesize{\href{https://www.coursera.org/account/accomplishments/certificate/RPGEPLA94HFF}{statement of accomplishment}}\\
+
+\textsc{July} 2016 & \href{http://epicgamejam.com/game/delta-zone}{Delta-zone}, a color-based puzzle game made for the Epic Game Jam & Unity and C\#\\
+\textsc{Mar.} 2016 & Designed and implemented a music description language for \href{https://arcaea.lowiro.com}{Arcaea} (Remote) & C++, Javascript\\
+\textsc{Feb.} 2016 & Start Hack: Medical feedback app for iOS & Swift\\
+\textsc{Sept} 2015 & \href{https://itunes.apple.com/us/app/hackerspaces/id1035583993?ls=1&mt=8}{Hackerspaces} for iOS, an App that allows you to track hackerspace openings across the world & Swift\\
+\textsc{Apr.} 2015 & Facebook Hackaton @EPFL. A project to take care of a connected plant. & Swift\\
+\textsc{May} 2015 & Helped implement parsing tools, real time event handling and UI for \href{https://play.google.com/store/apps/details?id=guy.taiko}{T-Aiko} A rhythm game on android and iOS (Remote) & Java\\
+\textsc{June} 2014 & \href{http://epicgamejam.com/game/the-sole-saviour}{Vertical 2D Side scroller shooter} for Epic Game Jam & Swift\\
+\textsc{Mar.} 2014 & A geolocalised music app for Android for Facebook Hackathon @EPFL & Java\\
+\textsc{Jan.} 2014 & Horizontal 2D Side scroller shooter for Global Game Jam & Scala\\
+\end{tabular}
+\renewcommand{\arraystretch}{1.2}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{French:} & Mothertongue\\
+
+\textsc{English:} & Fluent\\
+
+\textsc{Spanish:} & Good speaker\\
+
+\textsc{Japanese:} & Basic knowledge\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Programming Languages}
+
+\begin{tabular}{r|l}
+Mastery & Swift, Java\\
+Excellent & Scala, JS, Obj-C\\
+Intermediate & Haskell, Clojure, C++, C, C\#\\
+Beginner & Idris, Coq, Rust\\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+\begin{itemize}
+	\item \textsc{Video games} continuously teach me new ways of interacting within a team, handling hard situations and keeping the right mindset in highly competitive settings.
+	\item \textsc{Math} keeps me engaged in the latest developments in programming language research and theory. It allows me to find elegant and correct solutions to hard problems daily.
+\end{itemize}
+
+
+\end{document}
