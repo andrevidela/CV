@@ -10,7 +10,7 @@
 % Alessandro Plasmati (alessandro.plasmati@gmail.com)
 %
 % License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% CC BY-NC-SA 3.0 ( )
 %
 % Important note:
 % This template needs to be compiled with XeLaTeX.
@@ -43,6 +43,10 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
+\titleformat{\subsection}{\scshape\raggedright\large}{}{1em} {} []
+
+
+
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -52,7 +56,7 @@
 %----------------------------------------------------------------------------------------
 
 \par{\centering{\Huge André \textsc{Videla}}\bigskip\par} % Your name
-
+\par{\centering{\textsc{Functional Programmer / Aspiring Type Theorist}}\bigskip\par} % Your name
 \section{Personal Data}
 
 \begin{tabular}{rl}
@@ -73,25 +77,37 @@ Fascinated by programming languages, I seek excellence, correctness and beauty i
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
-\section{Work Experience}
+\section{Competencies}
+
+\subsection{Functional Programming}
 
 \begin{tabular}{r|p{9.3cm}|l}
-\emph{Current} & Software Engineer at Sicpa, Lausanne\\
-\textsc{Oct. 2016} & \emph{Mobile engineer for iOS}\\ 
-& \footnotesize{Designed, developed and maintained internal and public APIs and libraries for iOS. Developed and maintained small and medium scale mobile applications.} & Swift, Obj-C\\
-\multicolumn{2}{c}{} \\
 
-\textsc{July 2016} & Summer camp teacher at \textsc{TechSpark}, Lausanne \emph{}\\
-& \footnotesize{Taught basic programming to kids from 7 to 17 using Swift. Subjects include functions, flow control, loops and side effect all of which were implemented in an unsupervised personal project by the students.} & Swift\\
-\multicolumn{2}{c}{}\\
+\textsc{Aug.} 2017 & Programming with dependent types: Completed TTD in Idris by Edwin Brady with exercises available on \href{https://github.com/andrevidela/Type_Driven_Dev-Idris}{github} & Idris\\\\
+
+\textsc{Mar.} 2016 & Designed and implemented a music description language for \href{https://arcaea.lowiro.com}{Arcaea} (Remote) & C++, Javascript\\\\
 
 %------------------------------------------------
 
 \textsc{Sept 2015} & Internship at \textsc{Kabotip}, Tokyo (Remote) \emph{}\\
-\textsc{July 2015} & \footnotesize{Developed micro-services in Clojure for the Kabotip platform. Namely the mobile notification service and the automatic moderation tool for user comments.} & Clojure, Redis\\
-\multicolumn{2}{c}{}\\
+\textsc{July 2015} & \footnotesize{Developed micro-services in Clojure for the Kabotip platform. Namely the mobile notification service and the automatic moderation tool for user comments.} & Clojure, Redis\\\\
 
+\textsc{June 2015} & JS-Go: A pure, stateless game of Go in Scala & Scala, Scala-JS\\
+
+\end{tabular}
+
+\subsection{Mobile Development}
+
+\begin{tabular}{r|p{9.3cm}|l}
+\textsc{June 2017} & Software Engineer at Sicpa, Lausanne\\
+\textsc{Oct. 2016} & Mobile engineer for iOS\\ 
+& \footnotesize{Designed, developed and maintained internal and public APIs and libraries for iOS. Developed and maintained small and medium scale mobile applications.} & Swift, Obj-C\\
+\\
 %------------------------------------------------
+\textsc{Sept} 2015 & \href{https://itunes.apple.com/us/app/hackerspaces/id1035583993?ls=1&mt=8}{Hackerspaces} for iOS: an App that allows you to track hackerspace openings across the world & Swift\\\\
+
+\textsc{May} 2015 & T-Aiko: A rhythm game on android and iOS (Remote) & \\
+& \footnotesize{Implement parsing tools, real time event handling and UI} & Java\\\\
 
 \textsc{2013-2014} & Volunteer developer at Dischan, (Remote)\\
 & \footnotesize{Worked on Android ports and helped with QA} & Java
@@ -107,6 +123,8 @@ Fascinated by programming languages, I seek excellence, correctness and beauty i
 
 July 2017 & EUTypes summer school \\&\footnotesize{Coq, Agda, HoTT, $\lambda$-calculus} \\
 \multicolumn{2}{c}{}\\
+May 2017 & Introduction to Logic by Stanford University on Coursera. \footnotesize{\href{https://www.coursera.org/account/accomplishments/certificate/RPGEPLA94HFF}{statement of accomplishment}}\\
+\multicolumn{2}{c}{}\\
 2012 - 2016 & Attended Bachelor in Computer Science at EPFL, Lausanne\\
 & \footnotesize{Collected 131 credits}\\
 \multicolumn{2}{c}{}\\
@@ -120,20 +138,13 @@ July 2017 & EUTypes summer school \\&\footnotesize{Coq, Agda, HoTT, $\lambda$-ca
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
 
-\section{Certificates and Projects}
+\section{Miscellaneous Projects}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{rp{10cm}|l}
-\textsc{May} 2017 & Introduction to Logic by Stanford University on Coursera. \footnotesize{\href{https://www.coursera.org/account/accomplishments/certificate/RPGEPLA94HFF}{statement of accomplishment}}\\
-
+\textsc{Aug.} 2017 & Presented work on \href{http://www.cse.chalmers.se/~nad/publications/danielsson-parser-combinators.html}{\emph{Total Parser Combinators}} by Nils Anders Danielsson for a small conference & Swift\\
 \textsc{July} 2016 & \href{http://epicgamejam.com/game/delta-zone}{Delta-zone}, a color-based puzzle game made for the Epic Game Jam & Unity and C\#\\
-\textsc{Mar.} 2016 & Designed and implemented a music description language for \href{https://arcaea.lowiro.com}{Arcaea} (Remote) & C++, Javascript\\
-\textsc{Feb.} 2016 & Start Hack: Medical feedback app for iOS & Swift\\
-\textsc{Sept} 2015 & \href{https://itunes.apple.com/us/app/hackerspaces/id1035583993?ls=1&mt=8}{Hackerspaces} for iOS, an App that allows you to track hackerspace openings across the world & Swift\\
 \textsc{Apr.} 2015 & Facebook Hackaton @EPFL. A project to take care of a connected plant. & Swift\\
-\textsc{May} 2015 & Helped implement parsing tools, real time event handling and UI for \href{https://play.google.com/store/apps/details?id=guy.taiko}{T-Aiko} A rhythm game on android and iOS (Remote) & Java\\
-\textsc{June} 2014 & \href{http://epicgamejam.com/game/the-sole-saviour}{Vertical 2D Side scroller shooter} for Epic Game Jam & Swift\\
-\textsc{Mar.} 2014 & A geolocalised music app for Android for Facebook Hackathon @EPFL & Java\\
-\textsc{Jan.} 2014 & Horizontal 2D Side scroller shooter for Global Game Jam & Scala\\
+
 \end{tabular}
 \renewcommand{\arraystretch}{1.2}
 
@@ -163,8 +174,8 @@ July 2017 & EUTypes summer school \\&\footnotesize{Coq, Agda, HoTT, $\lambda$-ca
 \begin{tabular}{r|l}
 Mastery & Swift, Java\\
 Excellent & Scala, JS, Obj-C\\
-Intermediate & Haskell, Clojure, C++, C, C\#\\
-Beginner & Idris, Coq, Rust, Agda\\
+Intermediate & Idris, Haskell, Clojure, C++, C, C\#\\
+Beginner & Coq, Rust, Agda\\
 \end{tabular}
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
@@ -172,8 +183,9 @@ Beginner & Idris, Coq, Rust, Agda\\
 
 \section{Interests and Activities}
 \begin{itemize}
-	\item \textsc{Video games} continuously teach me new ways of interacting within a team, handling hard situations and keeping the right mindset in highly competitive settings.
+	\item \textsc{Video games} continuously teach me new ways of interacting within a team, handling hard situations and keeping the right mindset in highly competitive settings. I also keep a monthly "video game playing club" with a small group where we discuss the narrative value of interactive experiences.
 	\item \textsc{Math} keeps me engaged in the latest developments in programming language research and theory. It allows me to find elegant and correct solutions to hard problems daily.
+	\item \textsc{Sports} keep my healthy in many ways. I practice all sorts of individual trainings like running, fitness and swimming. I also played badminton with the team at my last company.
 \end{itemize}
 
 
