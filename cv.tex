@@ -45,7 +45,7 @@
 
 \titleformat{\subsection}{\scshape\raggedright\large}{}{1em} {} []
 
-
+\usepackage{makecell} % Used to format cells in tables
 
 \begin{document}
 
@@ -61,8 +61,8 @@
 
 \begin{tabular}{rl}
 \textsc{Place and Date of Birth:} & Switzerland  | 20 August 1991 \\
-\textsc{Address:} & Rue pré-du-marché 9B, 1004 Lausanne, Switzerland \\
-\textsc{Phone:} & +41 79 822 0541\\
+\textsc{Address:} & Rue Gibraltar 12, 2000 Neuchatel, Switzerland \\
+\textsc{Phone:} & +41 76 822 0541\\
 \textsc{email:} & \href{mailto:andre.videla@gmail.com}{andre.videla@gmail.com}
 \end{tabular}
 
@@ -71,27 +71,39 @@
 %----------------------------------------------------------------------------------------
 
 \section{Bio}
-Fascinated by programming languages, I seek excellence, correctness and beauty in code. Currently I work a lot in Idris and Agda trying to build real-world software out of provable programs. My deepest interests lie in type systems and programming language theory and design.
+Fascinated by programming languages, I seek excellence, correctness and beauty in code. Currently I work a lot in Idris trying to build real-world software out of provable programs. My deepest interests lie in type systems and programming language theory and design.
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
 \section{Work Experience}
-
+\renewcommand{\arraystretch}{1.3}
 \begin{tabular}{r|p{9.3cm}|l}
+\textsc{Apr. 2018} & Backend Developper at Bity SA (Neuchatel) & \\
+\textsc{Dec. 2018} & \footnotesize{Developed services to provide a common API to interact with cryptocurrency nodes. Lead the architectural effort to enable easy extension using the Haskell type system and provided strong guarantees about the business logic through thorough testing and type information.} & Haskell\\
+
+\makecell[cr]{
+	\textsc{Oct. 2017 -} \\
+	\textsc{Jan. 2018}
+	} & \makecell[cl]{Mobile Developper at Krown SA (Geneva)\\
+	    \footnotesize{Developed and maintained iOS app for business customers}}& Swift, Rx\\
+
+\textsc{Oct 2016 -} & Software Engineer at Sicpa, Lausanne\\
+
+\textsc{June. 2017}  
+& \footnotesize{Designed, developed and maintained internal and public APIs and libraries for iOS. Developed and maintained small and medium scale iOS apps using agile Scrum.} 
+& Swift, Obj-C\\
 
 \textsc{Mar. 2016}  & Release of \href{https://arcaea.lowiro.com}{Arcaea} for Android and iOS by lowiro (Remote)& \\
-&  \footnotesize{Designed and implemented a DSL to describe music notes in 3D, including parsing and checking tools}& C++, Javascript\\\\
+&  \footnotesize{Designed and implemented a DSL to describe music notes in 3D, including parsing and checking tools}& C++, Javascript\\
 
 %------------------------------------------------
 
-\textsc{Sept 2015} & Internship at \textsc{Kabotip}, Tokyo (Remote) \emph{}\\
-\textsc{July 2015} & \footnotesize{Developed micro-services in Clojure for the Kabotip platform. Namely the mobile notification service and the automatic moderation tool for user comments.} & Clojure, Redis\\\\
+\textsc{Sept 2015 -}& Internship at \textsc{Kabotip}, Tokyo (Remote) \emph{}\\
+\textsc{July 2015} & \footnotesize{Developed micro-services in Clojure for the Kabotip platform. Namely the mobile notification service and the automatic moderation tool for user comments.} & Clojure, Redis\\
 \textsc{May} 2015 & T-Aiko: A rhythm game on android and iOS (Remote) & Java\\
-& \footnotesize{Retro engineer existing DSL and wrote parsing tools and interpreter. As well as other tasks such as UI and real-time event handling} & \\\\
-
-\textsc{June 2015} & JS-Go: A pure, stateless game of Go in Scala & Scala, Scala-JS\\
+& \footnotesize{Retro engineer existing DSL and wrote parsing tools and interpreter. As well as other tasks such as UI and real-time event handling} & \\
 
 \end{tabular}
 
@@ -100,17 +112,17 @@ Fascinated by programming languages, I seek excellence, correctness and beauty i
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-
+\renewcommand{\arraystretch}{1.3}
 \begin{tabular}{rl}	
-Oct. 2017 - 2019 & Licence in Computer Science at Unidistance  \\\\ 
+Oct. 2017 - 2019 & Licence in Computer Science at Unidistance  \\ 
 
 July 2017 & EUTypes summer school \\&\footnotesize{Coq, Agda, HoTT, $\lambda$-calculus} \\
-\multicolumn{2}{c}{}\\
+%\multicolumn{2}{c}{}\\
 May 2017 & Introduction to Logic by Stanford University on Coursera. \footnotesize{\href{https://www.coursera.org/account/accomplishments/certificate/RPGEPLA94HFF}{statement of accomplishment}}\\
-\multicolumn{2}{c}{}\\
+%\multicolumn{2}{c}{}\\
 2012 - 2016 & Attended Bachelor in Computer Science at EPFL, Lausanne\\
 & \footnotesize{Collected 131 credits}\\
-\multicolumn{2}{c}{}\\
+%\multicolumn{2}{c}{}\\
 
 %------------------------------------------------
 
@@ -121,14 +133,17 @@ May 2017 & Introduction to Logic by Stanford University on Coursera. \footnotesi
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
 
-\section{Lectures Projects}
+\section{Lectures And Projects}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{rp{10cm}|l}
+\textsc{Ongoing} & Organiser of the \href{https://www.meetup.com/Formal-Methods-and-Verified-software-meetup}{\emph{Software verification meetup}} in Lausanne since 2017. & \\
+\textsc{Ongoing} & Reading \href{https://bentnib.org/quantitative-type-theory.html}{\emph{Quantitative Type Theory}} by Robert Atkey & \makecell[cl]{Type Theory, \\Idris 2}\\
+\textsc{Feb.} 2018 & Interviewed for the Corecursive podcast: \href{https://corecursive.com/007-total-programming-using-swift-with-andre-videla}{007 - Total Programming Using Swift with Andre Videla} & Swift, Idris\\
+\textsc{Dec.} 2017 & Gave a talk about Idris and dependent types at the Software verification meetup. & Idris\\
 \textsc{Oct.} 2017 & Read \emph{State Machines All The Way Down} by Edwin Brady & Idris\\
 \textsc{Sept.} 2017 & Read \emph{Kleisli arrows of outrageous fortune} by Conor McBride & Haskell (SHE)\\
 \textsc{Aug.} 2017 & Presented work on \href{http://www.cse.chalmers.se/~nad/publications/danielsson-parser-combinators.html}{\emph{Total Parser Combinators}} by Nils Anders Danielsson for a small local conference (\href{https://www.youtube.com/watch?v=DzKVm6ApKFI}{VOD on youtube})& Idris, Agda\\
-\textsc{Sept 2015} & Release of \href{https://itunes.apple.com/us/app/hackerspaces/id1035583993?ls=1&mt=8}{Hackerspaces} for iOS &\\
-\textsc{Apr.} 2015 & Facebook Hackaton @EPFL. A project to take care of a connected plant. & Swift\\
+\textsc{Sept 2015} & Release of \href{https://itunes.apple.com/us/app/hackerspaces/id1035583993?ls=1&mt=8}{Hackerspaces} for iOS & Swift\\
 
 \end{tabular}
 \renewcommand{\arraystretch}{1.2}
@@ -158,8 +173,8 @@ May 2017 & Introduction to Logic by Stanford University on Coursera. \footnotesi
 
 \begin{tabular}{r|l}
 Mastery & Swift, Java\\
-Excellent & Scala, JS, Obj-C\\
-Intermediate & Idris, Haskell, Clojure, C++, C, C\#\\
+Excellent & Scala, JS, Obj-C, Haskell\\
+Intermediate & Idris, Clojure, C++, C, C\#\\
 Beginner & Coq, Rust, Agda\\
 \end{tabular}
 %----------------------------------------------------------------------------------------
@@ -170,7 +185,7 @@ Beginner & Coq, Rust, Agda\\
 \begin{itemize}
 	\item \textsc{Video games} continuously teach me new ways of interacting within a team, handling hard situations and keeping the right mindset in highly competitive settings. I also keep a monthly "video game playing club" with a small group where we discuss the narrative value of interactive experiences.
 	\item \textsc{Math} keeps me engaged in the latest developments in programming language research and theory. It allows me to find elegant and correct solutions to hard problems daily.
-	\item \textsc{Sports} keep my healthy in many ways. I practice all sorts of individual trainings like running, fitness and swimming. I also played badminton with the team at my last company.
+	\item \textsc{Sports} allow me to stay healthy many ways. I practice all sorts of individual trainings like running, fitness exercises and swimming. I also played badminton with the team at Sicpa SA.
 \end{itemize}
 
 
